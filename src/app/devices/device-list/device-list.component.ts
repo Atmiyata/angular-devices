@@ -25,9 +25,9 @@ export class DeviceListComponent implements OnInit {
     this.devices$ = this.activatedRoute.queryParams.pipe(
       debounceTime(200),
       switchMap((param: Params) =>
-        param
-          ? this.deviceService.getDevices({ search: param['name'] })
-          : this.deviceService.getDevices()
+        this.deviceService.getDevices(
+          param ? { search: param['name'] } : undefined
+        )
       ),
       map((devices: Device[]) =>
         devices.map((device: Device) => ({
