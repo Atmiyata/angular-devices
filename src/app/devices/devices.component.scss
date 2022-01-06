@@ -1,0 +1,44 @@
+.main {
+  position: relative;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+  fa-icon {
+    position: absolute;
+    top: 50px;
+    left: 52px;
+    font-size: 19px;
+    color: gray;
+  }
+  .search-bar {
+    border: 1px solid #eee;
+    background-color: #d6e1e4ef;
+    display: grid;
+    grid-template-columns: auto 80px;
+    grid-gap: 5px;
+    padding: 10px;
+
+    input {
+      padding-left: 35px;
+      height: 34px;
+      border-radius: 5px;
+      font-size: 18px;
+      &:focus {
+        color: rgb(75, 75, 233);
+      }
+    }
+    button {
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      font-size: 22px;
+      color: rgb(127, 127, 228);
+      background-color: #d6e1e4ef;
+
+      &:hover {
+        color: rgb(75, 75, 233);
+      }
+    }
+  }
+}

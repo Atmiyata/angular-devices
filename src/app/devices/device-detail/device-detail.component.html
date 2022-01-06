@@ -1,0 +1,34 @@
+<div class="device-container">
+  <ng-container *ngIf="device$ | async as device">
+    <div class="related-device">
+      <div class="title">Related Devices</div>
+      <div class="related-list">
+        <ng-container *ngIf="device?.related_devices">
+          <div
+            class="card small-card"
+            *ngFor="let dev of device.related_devices; trackBy: trackByDevice"
+          >
+            <fa-icon [icon]="dev?.icon" class="card-ico"></fa-icon>
+            <div class="card-detail">
+              <div class="card-label">{{ dev.name }}</div>
+              <div class="card-sub-label">Status: {{ dev.status }}</div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+    <div class="device-detail">
+      <div class="title">Details : {{ device.name }}</div>
+      <div class="device-info">
+        <div>Status: {{ device.status }}</div>
+        <div *ngIf="device.temperature">
+          Temperature: {{ device.temperature }}
+        </div>
+        <div *ngIf="device.fps">FPS: {{ device.fps }}</div>
+        <div>Usage:</div>
+        <img src="../../../assets/images/chart_image.png" />
+      </div>
+    </div>
+  </ng-container>
+</div>
+<button (click)="goBack()">Back</button>

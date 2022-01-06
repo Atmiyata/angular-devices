@@ -1,0 +1,106 @@
+{
+  "devices": [
+    {
+      "id": 1,
+      "name": "Device 1",
+      "type": "Sensor",
+      "status": "Available",
+      "temperature": " 12 Celsius",
+      "related_devices": [
+        {
+          "id": 3,
+          "name": "Device 3",
+          "type": "Device",
+          "status": "Offline"
+        },
+        {
+          "id": 4,
+          "name": "Device 4",
+          "type": "Sensor",
+          "status": "Available"
+        },
+        {
+          "id": 5,
+          "name": "Device 5",
+          "type": "Device",
+          "status": "Offline"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Device 2",
+      "type": "Camera",
+      "fps": "20 FPS",
+      "status": "Available",
+      "related_devices": [
+        {
+          "id": 6,
+          "name": "Device 6",
+          "type": "Camera",
+          "status": "Available"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Device 3",
+      "type": "Sensor",
+      "status": "Offline",
+      "temperature": "10 Celsius",
+      "related_devices": [
+        {
+          "id": 4,
+          "name": "Device 4",
+          "type": "Sensor",
+          "status": "Available"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Device 4",
+      "type": "Sensor",
+      "status": "Available",
+      "temperature": "10 Celsius",
+      "related_devices": [
+        {
+          "id": 2,
+          "name": "Device 2",
+          "type": "Sensor",
+          "status": "Available"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Device 5",
+      "type": "Device",
+      "status": "Offline",
+      "temperature": "10 Celsius",
+      "related_devices": [
+        {
+          "id": 3,
+          "name": "Device 3",
+          "type": "Sensor",
+          "status": "Available"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Device 6",
+      "type": "Camera",
+      "status": "Available",
+      "fps": "20 FPS",
+      "related_devices": [
+        {
+          "id": 2,
+          "name": "Device 2",
+          "type": "Camera",
+          "status": "Available"
+        }
+      ]
+    }
+  ]
+}

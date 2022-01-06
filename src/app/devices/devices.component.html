@@ -1,0 +1,15 @@
+<div class="main">
+  <fa-icon [icon]="icon.SEARCH"></fa-icon>
+  <div class="search-bar">
+    <input
+      type="text"
+      placeholder="Search"
+      (keyup)="onSearch()"
+      [(ngModel)]="searchVal"
+    />
+    <button (click)="onCancelSearch()">Cancel</button>
+  </div>
+  <div class="device-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

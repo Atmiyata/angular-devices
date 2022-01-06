@@ -1,0 +1,14 @@
+<div class="card-container">
+  <div
+    class="card"
+    *ngFor="let device of devices$ | async; trackBy: trackByDevice"
+    (click)="viewDevice(device.id)"
+  >
+    <fa-icon [icon]="device?.icon" class="card-ico"></fa-icon>
+    <div class="card-detail">
+      <div class="card-label">{{ device.name }}</div>
+      <div class="card-sub-label">Status: {{ device.status }}</div>
+    </div>
+    <fa-icon [icon]="icon.INFO" class="card-ico"></fa-icon>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+.device-container {
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  height: 300px;
+
+  .related-device {
+    max-height: 500px;
+    margin-top: 0;
+    padding: 0;
+
+    .title {
+      color: #363535;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 8px;
+      background-color: #d6e1e4ef;
+    }
+
+    .related-list {
+      margin-top: 15px;
+      overflow-y: auto;
+
+      .card {
+        width: inherit;
+        cursor: pointer;
+        font-size: 22px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 10px !important;
+        background-color: #e1e7e9ef;
+
+        display: grid;
+        grid-template-columns: 50px auto;
+
+        &-ico {
+          margin-left: 20px;
+          font-size: 28px;
+        }
+
+        &-detail {
+          margin-left: 25px;
+          .card-label {
+            font-size: 20px;
+          }
+
+          .card-sub-label {
+            font-size: 18px;
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+  .device-detail {
+    border: 1px solid #eee;
+
+    .title {
+      color: #363535;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 10px;
+      background-color: #d6e1e4ef;
+    }
+    .device-info {
+      font-size: 18px;
+      padding: 15px;
+
+      div {
+        line-height: 18px;
+        margin-bottom: 5px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+button {
+  cursor: pointer;
+}

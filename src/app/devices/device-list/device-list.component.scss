@@ -1,0 +1,23 @@
+.card {
+  font-size: 22px;
+  background-color: #e1e7e9ef;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 70px auto 70px;
+
+  &-ico {
+    padding-left: 10px;
+    font-size: 28px;
+  }
+
+  &-detail {
+    .card-label {
+      font-size: 20px;
+    }
+
+    .card-sub-label {
+      font-size: 18px;
+      color: gray;
+    }
+  }
+}

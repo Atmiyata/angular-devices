@@ -1,0 +1,9 @@
+{
+  "/devices": {
+    "target": "http://localhost:4500/devices",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": { "^/devices": "" }
+  }
+}
